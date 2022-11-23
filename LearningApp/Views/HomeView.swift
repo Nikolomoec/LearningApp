@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var model: ContentModel
+    
     var body: some View {
         NavigationView {
             
@@ -24,18 +25,14 @@ struct HomeView: View {
                         
                         ForEach(model.modules) { module in
                             
-                            NavigationLink {
-                                LessonListView()
-                                    .onAppear {
-                                        model.beginModule(module.id)
+                            NavigationLink(destination:  LessonListView()
+                                .onAppear ( perform: {
+                                    model.beginModule(module.id)
+                                }), tag: module.id, selection: $model.currentContentSelected) {
+                                    VStack(spacing: 20) {
+                                        HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, lessons: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                     }
-                            tag: module.id
-                            selection: $selectedIndex
-                            } label: {
-                                VStack(spacing: 20) {
-                                    HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, lessons: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                 }
-                            }
                                 HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, lessons: "\(module.test.questions.count) Lessons", time: module.test.time)
                         }
                         

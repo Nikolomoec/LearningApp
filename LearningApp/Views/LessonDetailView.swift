@@ -32,11 +32,8 @@ struct LessonDetailView: View {
                         model.nextLesson()
                     } label: {
                         ZStack {
-                            Rectangle()
-                                .foregroundColor(.green)
-                                .cornerRadius(10)
-                                .shadow(radius: 5)
-                                .frame(height: 48)
+                            
+                            ButtonBackground()
                             
                             Text("Next Lesson: \(model.selectedModule!.content.lessons[model.currentLessonIndex + 1].title)")
                                 .foregroundColor(.white)
@@ -45,9 +42,23 @@ struct LessonDetailView: View {
                     }
                 }
                 
-                
+                else {
+                    Button {
+                        model.currentContentSelected = nil
+                    } label: {
+                        ZStack {
+                            
+                            ButtonBackground()
+                            
+                            Text("Complete")
+                                .foregroundColor(.white)
+                                .bold()
+                        }
+                    }
+                }
                 
             }
+            
         }
         .padding()
         .navigationBarTitle(lesson?.title ?? "")

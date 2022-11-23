@@ -16,6 +16,7 @@
 		5A46AFD52921857000131121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A46AFD42921857000131121 /* Preview Assets.xcassets */; };
 		5A46AFE12921864E00131121 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A46AFE02921864E00131121 /* ContentModel.swift */; };
 		5A5E1799292E98BC004683E8 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5E1798292E98BC004683E8 /* CodeTextView.swift */; };
+		5A5E17B9292EB642004683E8 /* ButtonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5E17B8292EB642004683E8 /* ButtonBackground.swift */; };
 		5A71C83E292BE69D002806C7 /* LessonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71C83D292BE69D002806C7 /* LessonDetailView.swift */; };
 		5A71C841292BEC6B002806C7 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A71C840292BEC6B002806C7 /* AVKit.framework */; };
 		5A71C843292BEDB7002806C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71C842292BEDB7002806C7 /* Constants.swift */; };
@@ -35,6 +36,7 @@
 		5A46AFD42921857000131121 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A46AFE02921864E00131121 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		5A5E1798292E98BC004683E8 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
+		5A5E17B8292EB642004683E8 /* ButtonBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackground.swift; sourceTree = "<group>"; };
 		5A71C83D292BE69D002806C7 /* LessonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailView.swift; sourceTree = "<group>"; };
 		5A71C840292BEC6B002806C7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		5A71C842292BEDB7002806C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				5A2F2094292AB3670001F015 /* LessonListRow.swift */,
 				5A71C83D292BE69D002806C7 /* LessonDetailView.swift */,
 				5A5E1798292E98BC004683E8 /* CodeTextView.swift */,
+				5A5E17B8292EB642004683E8 /* ButtonBackground.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				5A46AFD02921856F00131121 /* HomeView.swift in Sources */,
 				5A2F20912926C3030001F015 /* HomeViewRow.swift in Sources */,
 				5A71C83E292BE69D002806C7 /* LessonDetailView.swift in Sources */,
+				5A5E17B9292EB642004683E8 /* ButtonBackground.swift in Sources */,
 				5A46AFCE2921856F00131121 /* LearningApp.swift in Sources */,
 				5A46AFE12921864E00131121 /* ContentModel.swift in Sources */,
 				5A5E1799292E98BC004683E8 /* CodeTextView.swift in Sources */,
