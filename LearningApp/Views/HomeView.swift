@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var model: ContentModel
-    
     var body: some View {
         NavigationView {
             
@@ -30,6 +29,8 @@ struct HomeView: View {
                                     .onAppear {
                                         model.beginModule(module.id)
                                     }
+                            tag: module.id
+                            selection: $selectedIndex
                             } label: {
                                 VStack(spacing: 20) {
                                     HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, lessons: "\(module.content.lessons.count) Lessons", time: module.content.time)
