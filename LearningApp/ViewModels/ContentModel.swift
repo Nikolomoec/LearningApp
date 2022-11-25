@@ -135,6 +135,22 @@ class ContentModel: ObservableObject {
         
     }
     
+    func nextTest() {
+        
+        currentQuestionIndex += 1
+        
+        if currentQuestionIndex < selectedModule!.test.questions.count {
+            
+            currentQuestion = selectedModule!.test.questions[currentQuestionIndex]
+            CodeText = addStyling(currentQuestion!.content)
+        }
+        else {
+            currentQuestionIndex = 0
+            currentQuestion = nil
+        }
+        
+    }
+    
     private func addStyling(_ htmlString: String) -> NSAttributedString {
         
         var resultString = NSAttributedString()
