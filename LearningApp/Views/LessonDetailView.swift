@@ -33,7 +33,8 @@ struct LessonDetailView: View {
                     } label: {
                         ZStack {
                             
-                            ButtonBackground()
+                            ButtonBackground(color: .green)
+                                .frame(height: 48)
                             
                             Text("Next Lesson: \(model.selectedModule!.content.lessons[model.currentLessonIndex + 1].title)")
                                 .foregroundColor(.white)
@@ -48,7 +49,8 @@ struct LessonDetailView: View {
                     } label: {
                         ZStack {
                             
-                            ButtonBackground()
+                            ButtonBackground(color: .green)
+                                .frame(height: 48)
                             
                             Text("Complete")
                                 .foregroundColor(.white)

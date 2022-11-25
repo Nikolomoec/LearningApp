@@ -23,6 +23,7 @@
 		5A8125F129256E8F00277362 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 5A8125EF29256E8F00277362 /* style.html */; };
 		5A8125F229256E8F00277362 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8125F029256E8F00277362 /* data.json */; };
 		5A8125F42925706F00277362 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8125F32925706F00277362 /* Models.swift */; };
+		5A949F5129311C4500D64334 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A949F5029311C4500D64334 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		5A8125EF29256E8F00277362 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		5A8125F029256E8F00277362 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		5A8125F32925706F00277362 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5A949F5029311C4500D64334 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				5A46AFCF2921856F00131121 /* HomeView.swift */,
+				5A949F5029311C4500D64334 /* TestView.swift */,
 				5A2F20902926C3030001F015 /* HomeViewRow.swift */,
 				5A2F20922926C7AA0001F015 /* LessonListView.swift */,
 				5A2F2094292AB3670001F015 /* LessonListRow.swift */,
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A949F5129311C4500D64334 /* TestView.swift in Sources */,
 				5A2F20932926C7AA0001F015 /* LessonListView.swift in Sources */,
 				5A46AFD02921856F00131121 /* HomeView.swift in Sources */,
 				5A2F20912926C3030001F015 /* HomeViewRow.swift in Sources */,
