@@ -109,7 +109,7 @@ struct TestView: View {
             .navigationTitle("\(model.selectedModule?.category ?? "") Test")
         }
         else {
-            ProgressView()
+            resultView(score: numCorrect)
         }
         
     }

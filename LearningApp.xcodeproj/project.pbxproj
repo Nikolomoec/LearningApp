@@ -24,6 +24,7 @@
 		5A8125F229256E8F00277362 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8125F029256E8F00277362 /* data.json */; };
 		5A8125F42925706F00277362 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8125F32925706F00277362 /* Models.swift */; };
 		5A949F5129311C4500D64334 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A949F5029311C4500D64334 /* TestView.swift */; };
+		5A949F532931572500D64334 /* resultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A949F522931572500D64334 /* resultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		5A8125F029256E8F00277362 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		5A8125F32925706F00277362 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		5A949F5029311C4500D64334 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		5A949F522931572500D64334 /* resultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				5A46AFCF2921856F00131121 /* HomeView.swift */,
 				5A949F5029311C4500D64334 /* TestView.swift */,
+				5A949F522931572500D64334 /* resultView.swift */,
 				5A2F20902926C3030001F015 /* HomeViewRow.swift */,
 				5A2F20922926C7AA0001F015 /* LessonListView.swift */,
 				5A2F2094292AB3670001F015 /* LessonListRow.swift */,
@@ -233,6 +236,7 @@
 				5A2F20912926C3030001F015 /* HomeViewRow.swift in Sources */,
 				5A71C83E292BE69D002806C7 /* LessonDetailView.swift in Sources */,
 				5A5E17B9292EB642004683E8 /* ButtonBackground.swift in Sources */,
+				5A949F532931572500D64334 /* resultView.swift in Sources */,
 				5A46AFCE2921856F00131121 /* LearningApp.swift in Sources */,
 				5A46AFE12921864E00131121 /* ContentModel.swift in Sources */,
 				5A5E1799292E98BC004683E8 /* CodeTextView.swift in Sources */,
