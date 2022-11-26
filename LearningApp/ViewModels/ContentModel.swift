@@ -34,6 +34,7 @@ class ContentModel: ObservableObject {
     init() {
         
         getLocalData()
+        getRemoteData()
         
     }
     
@@ -68,6 +69,39 @@ class ContentModel: ObservableObject {
         catch {
             print(error)
         }
+    }
+    
+    func getRemoteData() {
+        
+        let strPath = "https://raysonyt.github.io/LearningApp_Data/data2.json"
+        
+        let url = URL(string: strPath)
+        
+        guard url != nil else{
+            return
+        }
+        
+        let request = URLRequest(url: url!)
+        
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: request) { data, responcse, error in
+            
+            guard error == nil else {
+                return
+            }
+            
+            let jsonDecoder = JSONDecoder()
+            do {
+                let modules = try jsonDecoder.decode([Module].self, from: data!)
+                self.modules += modules
+            }
+            catch {
+                print(error)
+            }
+        }
+        
+        dataTask.resume()
     }
     
     func beginModule(_ moduleId: Int) {

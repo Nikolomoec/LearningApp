@@ -46,6 +46,7 @@ struct HomeView: View {
                         }
                         
                     }
+                    .padding(.bottom)
                     .padding()
                     .accentColor(.black)
                 }
