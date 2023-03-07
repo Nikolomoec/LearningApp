@@ -73,8 +73,7 @@ class ContentModel: ObservableObject {
     
     func getRemoteData() {
         
-        let strPath = "https://raysonyt.github.io/LearningApp_Data/data2.json"
-        
+        let strPath = "https://Nikolomoec.github.io/HabitTrackerResources/templates.json/"
         let url = URL(string: strPath)
         
         guard url != nil else{
